@@ -24,6 +24,7 @@ class Timer
     }
     this.tick();
     this.interval = setInterval(this.tick, 10);
+    this.startButton.disabled = true;
   };
   tick = () => 
   {
@@ -47,6 +48,7 @@ class Timer
   pause = () =>
   {
     clearInterval(this.interval);
+    this.startButton.disabled = false;
   };
 
   get timeRemaining()
