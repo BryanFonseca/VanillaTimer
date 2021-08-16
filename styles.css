@@ -1,3 +1,17 @@
+#with-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 90vh;
+}
+h1{
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+}
 .dial{
   height: 400px;
   width: 400px
@@ -46,6 +60,6 @@ body{
 #whole{
   display: flex;
   justify-content: center;
-  height: 90vh;
+  height: 50vh;
   align-items: center;
 }

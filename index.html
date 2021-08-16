@@ -5,28 +5,35 @@
     <title>Timer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="whole">
-      <div class="timer">
-	<div class="controls">
-	  <input type="text" id="duration" value="30">
-	  <div>
-	    <button id="start"><i class="fas fa-play"></i></button>
-	    <button id="pause"><i class="fas fa-pause"></i></button>
+    <div id='with-text'>
+      <h1>Vanilla Timer</h1>
+      <div id="whole">
+	<div class="timer">
+	  <div class="controls">
+	    <input type="text" id="duration" value="30">
+	    <div>
+	      <button id="start"><i class="fas fa-play"></i></button>
+	      <button id="pause"><i class="fas fa-pause"></i></button>
+	    </div>
 	  </div>
+	  <svg class="dial" height="400" width="400">
+	    <circle 
+					 r="190" 
+					 cx="200" 
+					 cy="200"
+					 fill="transparent"
+					 stroke="#355070"
+					 stroke-width="15"
+					 transform="rotate(-90 200 200)"
+					 ></circle>
+	  </svg>
 	</div>
-	<svg class="dial" height="400" width="400">
-	  <circle 
-				       r="190" 
-				       cx="200" 
-				       cy="200"
-				       fill="transparent"
-				       stroke="#355070"
-				       stroke-width="15"
-				       transform="rotate(-90 200 200)"
-				       ></circle>
-	</svg>
       </div>
     </div>
     <script src="timer.js"></script>
